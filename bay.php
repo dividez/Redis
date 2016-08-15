@@ -188,13 +188,13 @@
                             echo '<p><span class="num">'.$a.'</span>';
                             for($i= 1; $i<16;$i++){
                                 if($i<10){
-                                    if($redis->getbit("movie", $a*1000+$i) == 1){
+                                    if($redis->getbit($_GET['movie'], $a*1000+$i) == 1){
                                         echo '<a href="javascript:;" hidefocus="true" class="seatedbay" title="'.$a.'排0'.$i.'座" status="1"></a>';
                                     }else{
                                         echo '<a href="javascript:;" hidefocus="true" class="seat" title="'.$a.'排0'.$i.'座" status="0"></a>';
                                     }
                                 }else{
-                                    if($redis->getbit("movie", $a*1000+$i) == 1){
+                                    if($redis->getbit($_GET['movie'], $a*1000+$i) == 1){
                                         echo '<a href="javascript:;" hidefocus="true" class="seatedbay" title="'.$a.'排0'.$i.'座" status="1"></a>';
                                     }else{
                                         echo '<a href="javascript:;" hidefocus="true" class="seat" title="'.$a.'排'.$i.'座" status="0"></a>';
