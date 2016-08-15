@@ -1,8 +1,9 @@
 /**
- * Created by 张鹏翼 on 2016/8/12.
+ * Created by  on 2016/8/12.
  */
 $(function () {
-
+    var dbname = window.location.search.replace("?","&");
+    var url = window.location.href;
     //座位对象
     var aTagName = $(".seat");
     //支付金额对象
@@ -58,11 +59,11 @@ $(function () {
         for (var i = 0; i < num; i++) {
             tt += set[i] + '=' + seatShow.eq(i).text().replace("排", '-').replace("座", '&');
         }
-        var str = tt.substring(0, tt.length - 1);
+        var str = tt.substring(0, tt.length - 1)+dbname;
         console.log(str);
         if (str == "") {
             alert("请选择座位后再提交！");
-            location = "bay.php";
+            location = url;
         } else {
             $.ajax({
                 type: "post",
@@ -71,7 +72,7 @@ $(function () {
                 data: str,
                 success: function (msg) {
                     alert(msg);
-                    location = "bay.php";
+                     location = url;
                 }
             });
         }

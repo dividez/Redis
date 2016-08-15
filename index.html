@@ -5,6 +5,13 @@
     <title>电影票订购系统</title>
     <link rel="stylesheet" href="css/cssrest.css">
     <link rel="stylesheet" href="css/movie.css">
+    <script src="js/jquery-1.4.2.js"></script>
+    <script src="js/index.js"></script>
+    <style type="text/css">
+        .movieChouse{
+            display: none;
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -117,7 +124,262 @@
             </div>
             <div class="movie-info cf">
                 <header>
-                    <h2>影院排片表</h2>
+                    <h2>那件疯狂的小事叫爱情</h2>
+                </header>
+                <div class="movie-info-list">
+                    <dl>
+                        <dt>首映：</dt>
+                        <dd>2016-8-12</dd>
+                        <dt>时长：</dt>
+                        <dd>95分钟</dd>
+                        <dt>类型：</dt>
+                        <dd>爱情,喜剧</dd>
+                        <dt>导演：</dt>
+                        <dd>邹佡</dd>
+                        <dt>地区：</dt>
+                        <dd>中国大陆,中国香港</dd>
+                    </dl>
+                </div>
+                <div class="show-time">
+                    <h2>观影时间：</h2>
+                    今天
+                </div>
+                <table class="time-table">
+                    <tbody>
+                    <tr>
+                        <th>放映时间</th>
+                        <th>语言版本</th>
+                        <th>放映厅</th>
+                        <th>电影售价</th>
+                        <th>在线选座</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="start-time">09:10</span>
+                            --
+                            <span class="end-time">10:50</span>
+                        </td>
+                        <td>国语3D</td>
+                        <td>3号厅</td>
+                        <td>
+                            <span class="start-time">44元</span>
+                        </td>
+                        <td>
+                            <a href="bay.php?movie=love1" class="btn btn-small">
+                                选座购票
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="start-time">10:30</span>
+                            --
+                            <span class="end-time">12:50</span>
+                        </td>
+                        <td>国语3D</td>
+                        <td>3号厅</td>
+                        <td>
+                            <span class="start-time">44元</span>
+                        </td>
+                        <td>
+                            <a href="bay.php?movie=love2" class="btn btn-small">
+                                选座购票
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="start-time">13:10</span>
+                            --
+                            <span class="end-time">14:50</span>
+                        </td>
+                        <td>国语3D</td>
+                        <td>3号厅</td>
+                        <td>
+                            <span class="start-time">44元</span>
+                        </td>
+                        <td>
+                            <a href="bay.php?movie=love3" class="btn btn-small">
+                                选座购票
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="movie-info cf movieChouse">
+                <header>
+                    <h2>封神</h2>
+                </header>
+                <div class="movie-info-list">
+                    <dl>
+                        <dt>首映：</dt>
+                        <dd>2016-7-29</dd>
+                        <dt>时长：</dt>
+                        <dd>109分钟</dd>
+                        <dt>类型：</dt>
+                        <dd>奇幻,古装,动作</dd>
+                        <dt>导演：</dt>
+                        <dd>许安,杨龙澄</dd>
+                        <dt>地区：</dt>
+                        <dd>中国大陆</dd>
+                    </dl>
+                </div>
+                <div class="show-time">
+                    <h2>观影时间：</h2>
+                    今天
+                </div>
+                <table class="time-table">
+                    <tbody>
+                    <tr>
+                        <th>放映时间</th>
+                        <th>语言版本</th>
+                        <th>放映厅</th>
+                        <th>电影售价</th>
+                        <th>在线选座</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="start-time">09:10</span>
+                            --
+                            <span class="end-time">10:50</span>
+                        </td>
+                        <td>国语3D</td>
+                        <td>3号厅</td>
+                        <td>
+                            <span class="start-time">44元</span>
+                        </td>
+                        <td>
+                            <a href="bay.php?movie=fengshen1" class="btn btn-small">
+                                选座购票
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="start-time">10:30</span>
+                            --
+                            <span class="end-time">12:50</span>
+                        </td>
+                        <td>国语3D</td>
+                        <td>3号厅</td>
+                        <td>
+                            <span class="start-time">44元</span>
+                        </td>
+                        <td>
+                            <a href="bay.php?movie=fengshen2" class="btn btn-small">
+                                选座购票
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="start-time">13:10</span>
+                            --
+                            <span class="end-time">14:50</span>
+                        </td>
+                        <td>国语3D</td>
+                        <td>3号厅</td>
+                        <td>
+                            <span class="start-time">44元</span>
+                        </td>
+                        <td>
+                            <a href="bay.php?movie=fengshen3" class="btn btn-small">
+                                选座购票
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="movie-info cf movieChouse">
+                <header>
+                    <h2>海洋之歌</h2>
+                </header>
+                <div class="movie-info-list">
+                    <dl>
+                        <dt>首映：</dt>
+                        <dd>2016-8-12</dd>
+                        <dt>时长：</dt>
+                        <dd>94分钟</dd>
+                        <dt>类型：</dt>
+                        <dd>动画,奇幻,冒险</dd>
+                        <dt>导演：</dt>
+                        <dd>汤姆·摩尔</dd>
+                        <dt>地区：</dt>
+                        <dd>爱尔兰,丹麦,比利时,卢森堡,法国</dd>
+                    </dl>
+                </div>
+                <div class="show-time">
+                    <h2>观影时间：</h2>
+                    今天
+                </div>
+                <table class="time-table">
+                    <tbody>
+                    <tr>
+                        <th>放映时间</th>
+                        <th>语言版本</th>
+                        <th>放映厅</th>
+                        <th>电影售价</th>
+                        <th>在线选座</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="start-time">09:10</span>
+                            --
+                            <span class="end-time">10:50</span>
+                        </td>
+                        <td>国语3D</td>
+                        <td>3号厅</td>
+                        <td>
+                            <span class="start-time">44元</span>
+                        </td>
+                        <td>
+                            <a href="bay.php?movie=haiyang1" class="btn btn-small">
+                                选座购票
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="start-time">10:30</span>
+                            --
+                            <span class="end-time">12:50</span>
+                        </td>
+                        <td>国语3D</td>
+                        <td>3号厅</td>
+                        <td>
+                            <span class="start-time">44元</span>
+                        </td>
+                        <td>
+                            <a href="bay.php?movie=haiyang2" class="btn btn-small">
+                                选座购票
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="start-time">13:10</span>
+                            --
+                            <span class="end-time">14:50</span>
+                        </td>
+                        <td>国语3D</td>
+                        <td>3号厅</td>
+                        <td>
+                            <span class="start-time">44元</span>
+                        </td>
+                        <td>
+                            <a href="bay.php?movie=haiyang3" class="btn btn-small">
+                                选座购票
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="movie-info cf movieChouse">
+                <header>
+                    <h2>谎言西西里</h2>
                 </header>
                 <div class="movie-info-list">
                     <dl>
@@ -158,7 +420,7 @@
                             <span class="start-time">44元</span>
                         </td>
                         <td>
-                            <a href="bay.php" class="btn btn-small">
+                            <a href="bay.php?movie=xixili1" class="btn btn-small">
                                 选座购票
                             </a>
                         </td>
@@ -175,7 +437,7 @@
                             <span class="start-time">44元</span>
                         </td>
                         <td>
-                            <a href="bay.php" class="btn btn-small">
+                            <a href="bay.php?movie=xixili2" class="btn btn-small">
                                 选座购票
                             </a>
                         </td>
@@ -192,7 +454,7 @@
                             <span class="start-time">44元</span>
                         </td>
                         <td>
-                            <a href="bay.php" class="btn btn-small">
+                            <a href="bay.php?movie=xixili3" class="btn btn-small">
                                 选座购票
                             </a>
                         </td>
@@ -200,7 +462,91 @@
                     </tbody>
                 </table>
             </div>
-
+            <div class="movie-info cf movieChouse">
+                <header>
+                    <h2>使徒行传</h2>
+                </header>
+                <div class="movie-info-list">
+                    <dl>
+                        <dt>首映：</dt>
+                        <dd>2016-8-11</dd>
+                        <dt>时长：</dt>
+                        <dd>109分钟</dd>
+                        <dt>类型：</dt>
+                        <dd>警匪,动作,犯罪</dd>
+                        <dt>导员：</dt>
+                        <dd>文伟鸿</dd>
+                        <dt>地区：</dt>
+                        <dd>中国香港,中国大陆</dd>
+                    </dl>
+                </div>
+                <div class="show-time">
+                    <h2>观影时间：</h2>
+                    今天
+                </div>
+                <table class="time-table">
+                    <tbody>
+                    <tr>
+                        <th>放映时间</th>
+                        <th>语言版本</th>
+                        <th>放映厅</th>
+                        <th>电影售价</th>
+                        <th>在线选座</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="start-time">09:10</span>
+                            --
+                            <span class="end-time">10:50</span>
+                        </td>
+                        <td>国语3D</td>
+                        <td>3号厅</td>
+                        <td>
+                            <span class="start-time">44元</span>
+                        </td>
+                        <td>
+                            <a href="bay.php?movie=shitu1" class="btn btn-small">
+                                选座购票
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="start-time">10:30</span>
+                            --
+                            <span class="end-time">12:50</span>
+                        </td>
+                        <td>国语3D</td>
+                        <td>3号厅</td>
+                        <td>
+                            <span class="start-time">44元</span>
+                        </td>
+                        <td>
+                            <a href="bay.php?movie=shitu2" class="btn btn-small">
+                                选座购票
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="start-time">13:10</span>
+                            --
+                            <span class="end-time">14:50</span>
+                        </td>
+                        <td>国语3D</td>
+                        <td>3号厅</td>
+                        <td>
+                            <span class="start-time">44元</span>
+                        </td>
+                        <td>
+                            <a href="bay.php?movie=shitu3" class="btn btn-small">
+                                选座购票
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
