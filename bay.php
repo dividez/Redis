@@ -128,7 +128,7 @@
         <nav>
             <ul class="nav-bar cf">
                 <li class="navber-item">
-                    <a class="navbar_item" href="">首页</a>
+                    <a class="navbar_item" href="/redis/movie">首页</a>
                 </li>
                 <li class="navber-item">
                     <a class="navbar_item" href="">今日新单</a>
@@ -180,10 +180,8 @@
                     </h3>
                     <div class="seat-content">
                         <?php
-                        include "RedisPool.class.php";
-                        $fas = array('HA' => array('127.0.0.1', '6379'));
-                        RedisPool::add_servers($fas);
-                        $redis = RedisPool::get("HA");
+                        $redis = new Redis();
+                        $redis->connect('127.0.0.1',6379);
                         for($a = 1;$a <=10;$a++){
                             echo '<p><span class="num">'.$a.'</span>';
                             for($i= 1; $i<16;$i++){
